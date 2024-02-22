@@ -58,8 +58,8 @@ def create_app(script_info=None, *args, **kwargs):
             "error":"this wasn't suppose to happen"
         })
 
-    # shell context for flask cli
-    @app.shell_context_processor
-    def ctx():
-        return {'app': app, 'db': db}
+    # # shell context for flask cli
+    # @app.shell_context_processor
+    # def ctx():
+    #     return {'app': app, 'db': db}
     return app
