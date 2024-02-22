@@ -59,7 +59,7 @@ def create_app(script_info=None):
         })
 
     # # shell context for flask cli
-    # @app.shell_context_processor
-    # def ctx():
-    #     return {'app': app, 'db': db}
+    @app.shell_context_processor
+    def ctx():
+        return {'app': app, 'db': db}
     return app
